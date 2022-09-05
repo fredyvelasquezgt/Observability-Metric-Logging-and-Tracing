@@ -18,9 +18,11 @@ En otras palabras, es posible entender lo que pasa en el interior de mi código 
 
 ## Logging
 
-Un los es inmutable, una registro de una marca de tiempo de eventos discretos que ocurrieron durante el tiempo.
+Un log es inmutable, un registro de una marca de tiempo de eventos discretos que ocurrieron durante el tiempo.
 
 <img src="./src/img3.jpeg" height=300>
+
+> Lista de logs desplegados en Datadog
 
 ## Tracing
 
