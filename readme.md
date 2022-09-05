@@ -81,7 +81,8 @@ sum(up{kubernetes_name="loadbalancer"}) < 3
 ¿Está nuestro loadbalancer en su 50% de capacidad en términos de sesiones?
 
 ```
-max(haproxy_frontend_current_sessions / haproxy_frontend_limit_sessions) BY (kubernetes_node_name, frontend) 100 > 50
+max(haproxy_frontend_current_sessions / haproxy_frontend_limit_sessions)
+BY (kubernetes_node_name, frontend) 100 > 50
 ```
 
 ¿El 50% de los tests están tomando más de 10 minutos?
