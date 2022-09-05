@@ -91,3 +91,24 @@ BY (kubernetes_node_name, frontend) 100 > 50
 max(test_duration_seconds{quantile="0.5", result="pass"})
 BY (test_name) > 600
 ```
+
+### Alertas basadas en logs [límites]
+
+```
+name: "production hvaddrd abusive activity detected"
+
+type: frequency
+
+index: default-%Y.%m.%d
+use_strftime_index: true
+
+num_events: 3
+
+timeframe:
+    minutes: 30
+
+filter:
+    -query
+        query_string:
+            query: "syslog_program:\"hvaddrd\" AND msg: \"abusive activity detected from VNIC\""
+```
