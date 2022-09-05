@@ -44,7 +44,7 @@ El tracing funciona como la caja negra de un avión durante un choque: ayuda a e
 
 Las metrics son representaciones numéricas de información medida en intervalos de tiempo.
 
-<img src="./src/img5.png" height=300>
+<img src="./src/img5.png" height=400>
 
 > Métricas desplegadas en Grafana usando Prometheus
 
