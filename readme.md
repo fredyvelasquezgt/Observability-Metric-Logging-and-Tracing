@@ -2,6 +2,10 @@
 
 Un sistema distribuido es uno en el cual el fallo de una computadora que ni siquera sabía que existía puede hacer que mi propia computador quede inutilizable - Leslie Camport
 
+## Monitoring
+
+Es cualquier hardware, software o aplicación utilizada junto con un dispositivo electrónico que puede hacer que el dispositivo electrónico capture, controle, registre o informe información sobre las actividades del usuario con o sin el conocimiento del usuario.
+
 Monitoring me permite responder solo las preguntas que yo ya tenía preparadas.
 
 ## Observability
@@ -112,3 +116,5 @@ filter:
         query_string:
             query: "syslog_program:\"hvaddrd\" AND msg: \"abusive activity detected from VNIC\""
 ```
+
+> Alerta si encuentra comportamientos abusivos
