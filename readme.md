@@ -36,9 +36,17 @@ Un rastro es una representación de una serie de eventos distribuidos casualment
 
 > Un rastro distribuido usando ELK stack
 
+### Ejemplo
+
+El tracing funciona como la caja negra de un avión durante un choque: ayuda a entender como pasaron las cosas durante el accidente, a descubrir la cadena de eventos que dieron lugar al problema. Provee una perspectiva de bajo nivel de comprensión: qué ocasionó algo en el programa, con qué argumentos lo hizo, en qué orden lo hizo, cuánto duró cada paso.
+
 ## Metrics
 
 Las metrics son representaciones numéricas de información medida en intervalos de tiempo.
+
+<img src="./src/img5.png" height=300>
+
+> Métricas desplegadas en Grafana usando Prometheus
 
 ### ¿Qué métricas?
 
