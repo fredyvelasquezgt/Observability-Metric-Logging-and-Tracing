@@ -56,3 +56,22 @@ Google recomienda las **Four Golden Signals**
 - traffic: solicitudes/segundo
 - error: Tasa de error de las solicitudes
 - saturation: Plenitud de un servicio.
+
+## Alerting
+
+Es una parte fundamental, yo quiero estar siempre enterado de si las cosas van bien o no.
+
+### Alertas basadas en métricas [state]
+
+¿Mi servicio está activo y/o se puede dañar?
+
+```
+absent (up{kubernetes_name="doccserver"}) or
+sum(up{kubernetes_name="doccserver"}) == 0
+```
+
+¿Tengo el número esperado de loadbalancers?
+
+```
+sum(up{kubernetes_name="loadbalancer"}) < 3
+```
