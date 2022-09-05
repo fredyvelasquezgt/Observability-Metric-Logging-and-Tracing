@@ -20,6 +20,8 @@ En otras palabras, es posible entender lo que pasa en el interior de mi código 
 
 Un los es inmutable, una registro de una marca de tiempo de eventos discretos que ocurrieron durante el tiempo.
 
+<img src="./src/img3.jpeg" height=60>
+
 ## Tracing
 
 Un rastro es una representación de una serie de eventos distribuidos casualmente relacionados que codifican el flujo de solicitudes de extremo a extremo a través de un sistema distribuido.
@@ -27,3 +29,12 @@ Un rastro es una representación de una serie de eventos distribuidos casualment
 ## Metrics
 
 Las metrics son representaciones numéricas de información medida en intervalos de tiempo.
+
+### ¿Qué métricas?
+
+Google recomienda las **Four Golden Signals**
+
+- latency: Tiempo para atender a una solicitud.
+- traffic: solicitudes/segundo
+- error: Tasa de error de las solicitudes
+- saturation: Plenitud de un servicio.
