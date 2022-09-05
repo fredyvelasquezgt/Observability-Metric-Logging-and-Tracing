@@ -24,9 +24,17 @@ Un log es inmutable, un registro de una marca de tiempo de eventos discretos que
 
 > Lista de logs desplegados en Datadog
 
+### Ejemplo
+
+Un itinerario de vuelo es un buen ejemplo de este principio: Todos registramos a los pasajeros y los miembros del equipo antes de que salga el vuelo, asi sabemos quienes están en el avión en un tiempo especifico.
+
 ## Tracing
 
 Un rastro es una representación de una serie de eventos distribuidos casualmente relacionados que codifican el flujo de solicitudes de extremo a extremo a través de un sistema distribuido.
+
+<img src="./src/img4.png" height=300>
+
+> Un rastro distribuido usando ELK stack
 
 ## Metrics
 
